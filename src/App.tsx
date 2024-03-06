@@ -6,10 +6,10 @@ import Post from './components/Post';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={ <Users />}/>
-      <Route path="/posts/:id" element={ <Posts />}/>
-      <Route path="/about" element={ <About />}/>
-      <Route path="*" element={ <NotFound />}/>
+      <Route path="/" element={ <Users /> } />
+      <Route path="/posts/:id" element={ <Posts /> } />
+      <Route path="/about" element={ <About /> } />
+      <Route path="*" element={ <NotFound /> } />
     </Routes>
   );
 }
