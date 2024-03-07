@@ -1,0 +1,354 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2024-03-06T23:06:50.777Z",
+    "end": "2024-03-06T23:06:53.153Z",
+    "duration": 2376,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "20d61678-2a59-492e-9e16-11ee4e283aec",
+      "title": "",
+      "fullFile": "cypress/e2e/App.cy.js",
+      "file": "cypress/e2e/App.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "21e39238-3d62-42c1-8e47-c32cd89490cf",
+          "title": "1 - Crie as rotas para a aplicação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "timedOut": null,
+              "duration": 325,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup();\ncy.get('[data-testid=\"users-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "c06cce51-27c7-458f-a0f6-165d7817b915",
+              "parentUUID": "21e39238-3d62-42c1-8e47-c32cd89490cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "timedOut": null,
+              "duration": 157,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('about');\ncy.get('[data-testid=\"about-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "07098f52-ec43-49a5-a62f-43048946c415",
+              "parentUUID": "21e39238-3d62-42c1-8e47-c32cd89490cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "timedOut": null,
+              "duration": 108,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/id');\ncy.get('[data-testid=\"posts-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "9f2b902e-67d5-4961-b32a-7ec297d5daca",
+              "parentUUID": "21e39238-3d62-42c1-8e47-c32cd89490cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "timedOut": null,
+              "duration": 113,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('not-found');\ncy.get('[data-testid=\"not-found-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "c046d2fb-473a-4ee0-a581-f5486fcb3afa",
+              "parentUUID": "21e39238-3d62-42c1-8e47-c32cd89490cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c06cce51-27c7-458f-a0f6-165d7817b915",
+            "07098f52-ec43-49a5-a62f-43048946c415",
+            "9f2b902e-67d5-4961-b32a-7ec297d5daca",
+            "c046d2fb-473a-4ee0-a581-f5486fcb3afa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 703,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "17710b43-c27a-46ac-8d9f-704d7d8a3862",
+          "title": "2- Crie dois NavLink dentro do componente Header",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "timedOut": null,
+              "duration": 107,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/home/i).should('have.attr', 'href', '/');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "d7b050d1-f78a-4018-95f0-a99d56f5e6ad",
+              "parentUUID": "17710b43-c27a-46ac-8d9f-704d7d8a3862",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "timedOut": null,
+              "duration": 105,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/about/i).should('have.attr', 'href', '/about');",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "fc3ab699-ae28-4628-8a0c-147433ebb038",
+              "parentUUID": "17710b43-c27a-46ac-8d9f-704d7d8a3862",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d7b050d1-f78a-4018-95f0-a99d56f5e6ad",
+            "fc3ab699-ae28-4628-8a0c-147433ebb038"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 212,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0d39ad82-6fe0-4d3b-8b1e-2731edc88b24",
+          "title": "3 - Crie um link para a página de posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "fullTitle": "3 - Crie um link para a página de posts de um usuário O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "timedOut": null,
+              "duration": 106,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (let id = 1; id <= _data.users.length; id++) {\n  cy.get(`a[href=\"/posts/${id}\"]`).should('exist');\n}",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "b2b0738c-76ea-4109-8ec3-e66fb053504a",
+              "parentUUID": "0d39ad82-6fe0-4d3b-8b1e-2731edc88b24",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b2b0738c-76ea-4109-8ec3-e66fb053504a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 106,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c01a9ad1-a2e1-413a-a870-fb600cc8c1f6",
+          "title": "4 - Exiba os posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "timedOut": null,
+              "duration": 111,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/1');\nconst othersPosts = _data.posts.filter(post => post.userId !== 1);\nothersPosts.forEach(post => {\n  cy.get('h2').should('not.contain', post.title);\n});\nconst userPosts = _data.posts.filter(post => post.userId === 1);\nuserPosts.forEach(post => {\n  cy.contains(post.title);\n});",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "28ce7bcd-ccd7-4c7a-a40c-b311e4461003",
+              "parentUUID": "c01a9ad1-a2e1-413a-a870-fb600cc8c1f6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O componente <Posts /> deve renderizar os posts do usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar os posts do usuário",
+              "timedOut": null,
+              "duration": 108,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_data.users.forEach(user => {\n  setup(`posts/${user.id}`);\n  const userPosts = _data.posts.filter(post => post.userId === user.id);\n  userPosts.forEach(post => {\n    cy.contains(post.title);\n  });\n});",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > posts is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at App (http://localhost:5173/src/App.tsx?t=1709766403074:35:35)\n    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:12169:26)\n    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:14919:21)\n    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:15900:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3697:24)\n    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:3731:39)\n    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19759:15)\n    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19192:20)\n    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-MMW4JUSU.js?v=4f9ad22d:19131:13)",
+                "diff": null
+              },
+              "uuid": "3a8dfb24-69b3-480c-9a28-aedcd88a2ffb",
+              "parentUUID": "c01a9ad1-a2e1-413a-a870-fb600cc8c1f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "28ce7bcd-ccd7-4c7a-a40c-b311e4461003",
+            "3a8dfb24-69b3-480c-9a28-aedcd88a2ffb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 219,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

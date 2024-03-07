@@ -1,9 +1,6 @@
 import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Users from './pages/Users';
-import Posts from './pages/Posts';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
+import { Users, Posts, About, NotFound } from './pages';
 
 function App() {
   return (
