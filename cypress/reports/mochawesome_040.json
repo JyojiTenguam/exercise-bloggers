@@ -1,0 +1,318 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-27T21:36:28.448Z",
+    "end": "2024-04-27T21:36:32.678Z",
+    "duration": 4230,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "97d3960f-63aa-4883-82ed-ecca386852e1",
+      "title": "",
+      "fullFile": "cypress/e2e/App.cy.js",
+      "file": "cypress/e2e/App.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ffadfaf1-59ea-41c6-86f3-902af73b0d35",
+          "title": "1 - Crie as rotas para a aplicação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "timedOut": null,
+              "duration": 419,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup();\ncy.get('[data-testid=\"users-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {},
+              "uuid": "4393ecb5-d3c1-4d70-9bbf-7633974a0538",
+              "parentUUID": "ffadfaf1-59ea-41c6-86f3-902af73b0d35",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "timedOut": null,
+              "duration": 182,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup('about');\ncy.get('[data-testid=\"about-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {},
+              "uuid": "02f21f1b-e94b-4644-ba82-d42945f9b403",
+              "parentUUID": "ffadfaf1-59ea-41c6-86f3-902af73b0d35",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "timedOut": null,
+              "duration": 131,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/id');\ncy.get('[data-testid=\"posts-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {},
+              "uuid": "9b4d5fc4-2288-4793-a167-20ee84ac2890",
+              "parentUUID": "ffadfaf1-59ea-41c6-86f3-902af73b0d35",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "timedOut": null,
+              "duration": 131,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup('not-found');\ncy.get('[data-testid=\"not-found-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {},
+              "uuid": "5bf65efb-04f3-4ed4-84c5-003173b99520",
+              "parentUUID": "ffadfaf1-59ea-41c6-86f3-902af73b0d35",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4393ecb5-d3c1-4d70-9bbf-7633974a0538",
+            "02f21f1b-e94b-4644-ba82-d42945f9b403",
+            "9b4d5fc4-2288-4793-a167-20ee84ac2890",
+            "5bf65efb-04f3-4ed4-84c5-003173b99520"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 863,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3122f255-2071-4342-8d7b-483804267760",
+          "title": "2- Crie dois NavLink dentro do componente Header",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "timedOut": null,
+              "duration": 125,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/home/i).should('have.attr', 'href', '/');",
+              "err": {},
+              "uuid": "11cdd5e6-c2c6-4506-aa96-a451718d2e9b",
+              "parentUUID": "3122f255-2071-4342-8d7b-483804267760",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "timedOut": null,
+              "duration": 125,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/about/i).should('have.attr', 'href', '/about');",
+              "err": {},
+              "uuid": "cc36209f-1099-4add-ad8b-56c58bd9de07",
+              "parentUUID": "3122f255-2071-4342-8d7b-483804267760",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "11cdd5e6-c2c6-4506-aa96-a451718d2e9b",
+            "cc36209f-1099-4add-ad8b-56c58bd9de07"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 250,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "246721ba-851d-40df-befa-fea06702cfcb",
+          "title": "3 - Crie um link para a página de posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "fullTitle": "3 - Crie um link para a página de posts de um usuário O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "timedOut": null,
+              "duration": 158,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "for (let id = 1; id <= _data.users.length; id++) {\n  cy.get(`a[href=\"/posts/${id}\"]`).should('exist');\n}",
+              "err": {},
+              "uuid": "24ee2d49-4c4b-4b9b-9937-a2213bbcb793",
+              "parentUUID": "246721ba-851d-40df-befa-fea06702cfcb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24ee2d49-4c4b-4b9b-9937-a2213bbcb793"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "278d3898-27fc-43d7-8074-56d08a29602b",
+          "title": "4 - Exiba os posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "timedOut": null,
+              "duration": 269,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/1');\nconst othersPosts = _data.posts.filter(post => post.userId !== 1);\nothersPosts.forEach(post => {\n  cy.get('h2').should('not.contain', post.title);\n});\nconst userPosts = _data.posts.filter(post => post.userId === 1);\nuserPosts.forEach(post => {\n  cy.contains(post.title);\n});",
+              "err": {},
+              "uuid": "e0d30413-4223-4ed6-a3e6-43b403315e3b",
+              "parentUUID": "278d3898-27fc-43d7-8074-56d08a29602b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O componente <Posts /> deve renderizar os posts do usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar os posts do usuário",
+              "timedOut": null,
+              "duration": 1625,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_data.users.forEach(user => {\n  setup(`posts/${user.id}`);\n  const userPosts = _data.posts.filter(post => post.userId === user.id);\n  userPosts.forEach(post => {\n    cy.contains(post.title);\n  });\n});",
+              "err": {},
+              "uuid": "0beee585-c67e-43af-84d2-0a8a86743626",
+              "parentUUID": "278d3898-27fc-43d7-8074-56d08a29602b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e0d30413-4223-4ed6-a3e6-43b403315e3b",
+            "0beee585-c67e-43af-84d2-0a8a86743626"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1894,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
